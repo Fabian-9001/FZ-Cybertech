@@ -2,6 +2,8 @@ const notificationsControllers = require("./notifications.controllers");
 const mailer = require("../utils/mailer");
 const config = require("../../config");
 
+const { purchaseNotification } = require("../lib/services/telegraf.services");
+
 const postPurchaseNotification = (req, res) => {
   const { docRef } = req.body;
   notificationsControllers
@@ -23,9 +25,29 @@ const postPurchaseNotification = (req, res) => {
        <a href:${config.api.email}>${config.api.email}</a>
         `,
         });
-        res.status(200).json(user);
+        if (user.chatId) {
+          purchaseNotification({
+            chat: user.chatId,
+            message: "Compra realizada!",
+          });
+          res.status(200).json("Notification sended");
+        } else {
+          notificationsControllers
+          //Obtener chatId de manera dinamica con el bot
+            .updateUser(docRef, { chatId: 6258913290 })
+            .then(() => {
+              purchaseNotification({
+                chat: 6258913290,
+                message: "Compra realizada! Desde de la cracion del chatId",
+              });
+              res.status(200).json("Updated User");
+            })
+            .catch((err) => res.status(400).json(err.message));
+        }
       } else {
-        res.status(404).json({ message: `User with document reference ${docRef} not found` });
+        res.status(404).json({
+          message: `User with document reference ${docRef} not found`,
+        });
       }
     })
     .catch((err) => console.log(err.message));
