@@ -1,6 +1,5 @@
 const bot = require("../../utils/telegraf");
 const { updateUser } = require("../../notifications/notifications.controllers");
-//6258913290 CHAT ID
 
 const initChat = () => {
   bot.start((ctx) => {
@@ -10,7 +9,7 @@ const initChat = () => {
 initChat();
 
 //Funcion para obtener chatId
-//Crear comando personalizado que mande el chatId y una vez obtenido actualizar el usuario
+//6258913290 CHAT ID
 const assignChatId = async (docRef) => {
   bot.hears("/start", (ctx) => {
     updateUser(docRef, { chatId: ctx.chat.id || 6258913290 })

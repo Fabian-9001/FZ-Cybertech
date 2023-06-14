@@ -1,12 +1,13 @@
 //Dependencies and Imports
+const functions = require("firebase-functions");
 const express = require("express");
-const config = require("../config");
 const notificationsRoutes = require("./notifications/notifications.router");
-const bot = require('./utils/telegraf')
+const cors = require("cors");
 
 //Init Config
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 //Routes
 app.get("/", (req, res) => {
@@ -14,10 +15,4 @@ app.get("/", (req, res) => {
 });
 app.use("/api/v1/notifications", notificationsRoutes);
 
-//Telegraf
-bot.launch()
-
-//Server
-app.listen(config.api.port, () => {
-  console.log(`This Server is Active on ${config.api.host}`);
-});
+exports.app = functions.https.onRequest(app);

@@ -1,0 +1,175 @@
+[debug] [2023-06-12T14:51:11.523Z] ----------------------------------------------------------------------
+[debug] [2023-06-12T14:51:11.525Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\garci\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2023-06-12T14:51:11.525Z] CLI Version:   12.3.1
+[debug] [2023-06-12T14:51:11.525Z] Platform:      win32
+[debug] [2023-06-12T14:51:11.525Z] Node Version:  v18.16.0
+[debug] [2023-06-12T14:51:11.526Z] Time:          Mon Jun 12 2023 08:51:11 GMT-0600 (hora estándar central)
+[debug] [2023-06-12T14:51:11.526Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-12T14:51:11.530Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-06-12T14:51:11.631Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-12T14:51:11.632Z] > authorizing via signed-in user (garciacruzfabian23@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2023-06-12T14:51:11.641Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-12T14:51:11.642Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-06-12T14:51:11.657Z] [hub] writing locator at C:\Users\garci\AppData\Local\Temp\hub-e-commerce-bd91c.json
+[debug] [2023-06-12T14:51:11.675Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-12T14:51:11.675Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-06-12T14:51:11.675Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[debug] [2023-06-12T14:51:11.680Z] defaultcredentials: writing to file C:\Users\garci\AppData\Roaming\firebase\garciacruzfabian23_gmail_com_application_default_credentials.json
+[debug] [2023-06-12T14:51:11.688Z] Setting GAC to C:\Users\garci\AppData\Roaming\firebase\garciacruzfabian23_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\garci\\AppData\\Roaming\\firebase\\garciacruzfabian23_gmail_com_application_default_credentials.json"}}
+[debug] [2023-06-12T14:51:11.690Z] > refreshing access token with scopes: []
+[debug] [2023-06-12T14:51:11.691Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-12T14:51:11.691Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-12T14:51:11.955Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-06-12T14:51:11.955Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-06-12T14:51:12.002Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-06-12T14:51:12.002Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-12T14:51:12.009Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-bd91c/adminSdkConfig [none]
+[debug] [2023-06-12T14:51:12.428Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-bd91c/adminSdkConfig 200
+[debug] [2023-06-12T14:51:12.428Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/e-commerce-bd91c/adminSdkConfig {"projectId":"e-commerce-bd91c","storageBucket":"e-commerce-bd91c.appspot.com","locationId":"us-central"}
+[debug] [2023-06-12T14:51:12.451Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-06-12T14:51:12.451Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-06-12T14:51:12.451Z] Starting Emulator UI with command {"binary":"node","args":["C:\\Users\\garci\\.cache\\firebase\\emulators\\ui-v1.11.6\\server\\server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"C:\\\\Users\\\\garci\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.11.6\\\\server\\\\server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2023-06-12T14:51:12.561Z] Web / API server started at 127.0.0.1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
+[debug] [2023-06-12T14:51:12.561Z] Web / API server started at ::1:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
+[info] i  functions: Watching "C:\Users\garci\Documents\fdsf\Firebase x Node Js\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\" for Cloud Functions..."}}
+[debug] [2023-06-12T14:51:12.730Z] Validating nodejs source
+[debug] [2023-06-12T14:51:14.413Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "dotenv": "^16.1.4",
+    "firebase-admin": "^11.8.0",
+    "firebase-functions": "^4.3.1",
+    "nodemailer": "^6.9.3",
+    "telegraf": "^4.12.2"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.1.0"
+  },
+  "private": true
+}
+[debug] [2023-06-12T14:51:14.413Z] Building nodejs source
+[debug] [2023-06-12T14:51:14.413Z] Failed to find version of module node: reached end of search path C:\Users\garci\Documents\fdsf\Firebase x Node Js\functions\node_modules
+[info] +  functions: Using node@18 from host. 
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-12T14:51:14.417Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-06-12T14:51:14.423Z] Found firebase-functions binary at 'C:\Users\garci\Documents\fdsf\Firebase x Node Js\functions\node_modules\.bin\firebase-functions'
+[debug] [2023-06-12T14:51:14.713Z] Serving at port 8193
+
+[debug] [2023-06-12T14:51:15.397Z] Got response from /__/functions.yaml {"endpoints":{"app":{"platform":"gcfv1","availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"serviceAccountEmail":null,"vpc":null,"httpsTrigger":{},"entryPoint":"app"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-06-12T14:51:15.403Z] shutdown requested via /__/quitquitquit
+
+[info] +  functions: Loaded functions definitions from source: app. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: app."}}
+[info] +  functions[us-central1-app]: http function initialized (http://127.0.0.1:5001/e-commerce-bd91c/us-central1/app). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://127.0.0.1:5001/e-commerce-bd91c/us-central1/app)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at 127.0.0.1:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2023-06-12T14:52:23.684Z] [work-queue] {"queuedWork":["/e-commerce-bd91c/us-central1/app/notifications/purchase-2023-06-12T14:52:23.684Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:52:23.684Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/e-commerce-bd91c/us-central1/app/notifications/purchase-2023-06-12T14:52:23.684Z"],"workRunningCount":1}
+[debug] [2023-06-12T14:52:23.685Z] Accepted request POST /e-commerce-bd91c/us-central1/app/notifications/purchase --> us-central1-app
+[debug] [2023-06-12T14:52:23.689Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-12T14:52:23.689Z] [functions] Got req.url=/e-commerce-bd91c/us-central1/app/notifications/purchase, mapping to path=/notifications/purchase {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-commerce-bd91c/us-central1/app/notifications/purchase, mapping to path=/notifications/purchase"}}
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2023-06-12T14:52:23.699Z] [worker-pool] addWorker(us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-app)"}}
+[debug] [2023-06-12T14:52:23.699Z] [worker-pool] Adding worker with key us-central1-app, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-app, total=1"}}
+[debug] [2023-06-12T14:52:24.866Z] [runtime-status] [13900] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-12T14:52:24.867Z] [runtime-status] [13900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-12T14:52:24.867Z] [runtime-status] [13900] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2023-06-12T14:52:24.868Z] [runtime-status] [13900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-12T14:52:25.135Z] [runtime-status] [13900] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Checked functions.config() {\"config\":{}}"}}
+[debug] [2023-06-12T14:52:25.136Z] [runtime-status] [13900] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}}"}}
+[debug] [2023-06-12T14:52:25.136Z] [runtime-status] [13900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-12T14:52:25.137Z] [runtime-status] [13900] Resolved module firebase-admin {"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-admin\\lib\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}"}}
+[debug] [2023-06-12T14:52:25.141Z] [runtime-status] [13900] Resolved module firebase-functions {"declared":true,"installed":true,"version":"4.4.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-functions\\lib\\v1\\index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"4.4.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-functions\\\\lib\\\\v1\\\\index.js\"}"}}
+[debug] [2023-06-12T14:52:25.142Z] [runtime-status] [13900] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"11.9.0","resolution":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions\\node_modules\\firebase-admin\\lib\\index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"11.9.0\",\"resolution\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\\\\node_modules\\\\firebase-admin\\\\lib\\\\index.js\"}}"}}
+[debug] [2023-06-12T14:52:25.393Z] [runtime-status] [13900] Functions runtime initialized. {"cwd":"C:\\Users\\garci\\Documents\\fdsf\\Firebase x Node Js\\functions","node_version":"18.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Functions runtime initialized. {\"cwd\":\"C:\\\\Users\\\\garci\\\\Documents\\\\fdsf\\\\Firebase x Node Js\\\\functions\",\"node_version\":\"18.16.0\"}"}}
+[debug] [2023-06-12T14:52:25.393Z] [runtime-status] [13900] Listening to port: \\?\pipe\fire_emu_34069796bcef1d6d {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[runtime-status] [13900] Listening to port: \\\\?\\pipe\\fire_emu_34069796bcef1d6d"}}
+[debug] [2023-06-12T14:52:25.469Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE"}}
+[debug] [2023-06-12T14:52:25.469Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-12T14:52:25.470Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY"}}
+[debug] [2023-06-12T14:52:25.491Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 20.9661ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 20.9661ms"}}
+[debug] [2023-06-12T14:52:25.491Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE"}}
+[debug] [2023-06-12T14:52:25.492Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-12T14:52:25.492Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-12T14:52:25.492Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:53:15.809Z] [work-queue] {"queuedWork":["/e-commerce-bd91c/us-central1/api/v1/notifications/purchase-2023-06-12T14:53:15.809Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:53:15.809Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/e-commerce-bd91c/us-central1/api/v1/notifications/purchase-2023-06-12T14:53:15.809Z"],"workRunningCount":1}
+[debug] [2023-06-12T14:53:15.811Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:53:43.869Z] [work-queue] {"queuedWork":["/e-commerce-bd91c/us-central1/app-2023-06-12T14:53:43.869Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:53:43.869Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/e-commerce-bd91c/us-central1/app-2023-06-12T14:53:43.869Z"],"workRunningCount":1}
+[debug] [2023-06-12T14:53:43.869Z] Accepted request GET /e-commerce-bd91c/us-central1/app --> us-central1-app
+[debug] [2023-06-12T14:53:43.872Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-12T14:53:43.872Z] [functions] Got req.url=/e-commerce-bd91c/us-central1/app, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-commerce-bd91c/us-central1/app, mapping to path=/"}}
+[debug] [2023-06-12T14:53:43.872Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-12T14:53:43.873Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY"}}
+[debug] [2023-06-12T14:53:43.878Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 5.5067ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 5.5067ms"}}
+[debug] [2023-06-12T14:53:43.879Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE"}}
+[debug] [2023-06-12T14:53:43.879Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-12T14:53:43.879Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-12T14:53:43.880Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:54:05.860Z] [work-queue] {"queuedWork":["/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase-2023-06-12T14:54:05.860Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:54:05.860Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase-2023-06-12T14:54:05.860Z"],"workRunningCount":1}
+[debug] [2023-06-12T14:54:05.860Z] Accepted request POST /e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase --> us-central1-app
+[debug] [2023-06-12T14:54:05.863Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-12T14:54:05.864Z] [functions] Got req.url=/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase, mapping to path=/api/v1/notifications/purchase {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase, mapping to path=/api/v1/notifications/purchase"}}
+[debug] [2023-06-12T14:54:05.864Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-12T14:54:05.864Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY"}}
+[debug] [2023-06-12T14:54:09.951Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 4086.7628ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 4086.7628ms"}}
+[debug] [2023-06-12T14:54:09.952Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE"}}
+[debug] [2023-06-12T14:54:09.952Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-12T14:54:09.952Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-12T14:54:09.952Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[warn] !  External network resource requested!
+   - URL: "https://api.telegram.org/bot6213286219:AAHpsQlagVaZoYmP99mIVH2Ab0lHS4qZsjQ/sendMessage"
+ - Be careful, this may be a production service. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"External network resource requested!\n   - URL: \"https://api.telegram.org/bot6213286219:AAHpsQlagVaZoYmP99mIVH2Ab0lHS4qZsjQ/sendMessage\"\n - Be careful, this may be a production service."}}
+[debug] [2023-06-12T14:56:03.879Z] [work-queue] {"queuedWork":["/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase-2023-06-12T14:56:03.879Z"],"queueLength":1,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T14:56:03.879Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":["/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase-2023-06-12T14:56:03.879Z"],"workRunningCount":1}
+[debug] [2023-06-12T14:56:03.879Z] Accepted request POST /e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase --> us-central1-app
+[debug] [2023-06-12T14:56:03.884Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2023-06-12T14:56:03.885Z] [functions] Got req.url=/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase, mapping to path=/api/v1/notifications/purchase {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/e-commerce-bd91c/us-central1/app/api/v1/notifications/purchase, mapping to path=/api/v1/notifications/purchase"}}
+[debug] [2023-06-12T14:56:03.885Z] [worker-pool] submitRequest(triggerId=us-central1-app) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitRequest(triggerId=us-central1-app)"}}
+[info] i  functions: Beginning execution of "us-central1-app" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Beginning execution of \"us-central1-app\""}}
+[debug] [2023-06-12T14:56:03.886Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: BUSY"}}
+[debug] [2023-06-12T14:56:05.755Z] Finishing up request with event=pause {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=pause"}}
+[info] i  functions: Finished "us-central1-app" in 1869.3186ms {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finished \"us-central1-app\" in 1869.3186ms"}}
+[debug] [2023-06-12T14:56:05.755Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: IDLE"}}
+[debug] [2023-06-12T14:56:05.756Z] Finishing up request with event=finish {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=finish"}}
+[debug] [2023-06-12T14:56:05.756Z] Finishing up request with event=close {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"Finishing up request with event=close"}}
+[debug] [2023-06-12T14:56:05.756Z] [work-queue] {"queuedWork":[],"queueLength":0,"runningWork":[],"workRunningCount":0}
+[debug] [2023-06-12T15:13:10.460Z] [worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: exited {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-app"},"extension":{},"message":"[worker-us-central1-app-5422d7ea-29e8-4dbd-bb50-f1675acc74df]: exited"}}

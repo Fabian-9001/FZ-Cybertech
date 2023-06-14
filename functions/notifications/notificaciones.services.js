@@ -1,7 +1,6 @@
 const notificationsControllers = require("./notifications.controllers");
 const mailer = require("../utils/mailer");
-const config = require("../../config");
-
+const config = require("../config");
 const { purchaseNotification } = require("../lib/services/telegraf.services");
 
 const postPurchaseNotification = (req, res) => {
